@@ -10,7 +10,6 @@ import (
 
 type templateData struct {
 	Name             string
-	InputFuncName    string
 	DescribeFuncName string
 	PrintFuncName    string
 }
@@ -55,7 +54,6 @@ func main() {
 			filePath: "ec2_instance_default.go",
 			data: templateData{
 				Name:             "doInstanceInfo",
-				InputFuncName:    "CreateDescribeInstancesInput",
 				DescribeFuncName: "DescribeInstanceInfo",
 				PrintFuncName:    "PrintInstanceInfo",
 			},
@@ -64,7 +62,6 @@ func main() {
 			filePath: "ec2_instance_sg.go",
 			data: templateData{
 				Name:             "doInstanceSecurityGroupInfo",
-				InputFuncName:    "CreateDescribeInstancesInput",
 				DescribeFuncName: "DescribeInstanceSecurityGroupInfo",
 				PrintFuncName:    "PrintInstanceSecurityGroupInfo",
 			},
@@ -73,7 +70,6 @@ func main() {
 			filePath: "ec2_instance_rtb.go",
 			data: templateData{
 				Name:             "doInstanceRouteInfo",
-				InputFuncName:    "CreateDescribeInstancesInput",
 				DescribeFuncName: "DescribeInstanceRouteInfo",
 				PrintFuncName:    "PrintInstanceRouteInfo",
 			},
@@ -82,7 +78,6 @@ func main() {
 			filePath: "ec2_instance_storage.go",
 			data: templateData{
 				Name:             "doInstanceStorageInfo",
-				InputFuncName:    "CreateDescribeInstancesInput",
 				DescribeFuncName: "DescribeInstanceStorageInfo",
 				PrintFuncName:    "PrintInstanceStorageInfo",
 			},
@@ -91,7 +86,6 @@ func main() {
 			filePath: "ec2_instance_backup.go",
 			data: templateData{
 				Name:             "doInstanceBackupInfo",
-				InputFuncName:    "CreateDescribeInstancesInput",
 				DescribeFuncName: "DescribeInstanceBackupInfo",
 				PrintFuncName:    "PrintInstanceBackupInfo",
 			},
@@ -100,7 +94,6 @@ func main() {
 			filePath: "ec2_instance_lb.go",
 			data: templateData{
 				Name:             "doInstanceLoadBalancerInfo",
-				InputFuncName:    "CreateDescribeInstancesInput",
 				DescribeFuncName: "DescribeInstanceLoadBalancerInfo",
 				PrintFuncName:    "PrintInstanceLoadBalancerInfo",
 			},
@@ -109,7 +102,6 @@ func main() {
 			filePath: "ec2_image_default.go",
 			data: templateData{
 				Name:             "doImageInfo",
-				InputFuncName:    "CreateDescribeImagesInput",
 				DescribeFuncName: "DescribeImageInfo",
 				PrintFuncName:    "PrintImageInfo",
 			},
@@ -118,7 +110,6 @@ func main() {
 			filePath: "ec2_image_backup.go",
 			data: templateData{
 				Name:             "doImageBackupInfo",
-				InputFuncName:    "CreateDescribeImagesInput",
 				DescribeFuncName: "DescribeImageBackupInfo",
 				PrintFuncName:    "PrintImageBackupInfo",
 			},
@@ -127,7 +118,6 @@ func main() {
 			filePath: "ec2_sg_default.go",
 			data: templateData{
 				Name:             "doSecurityGroupInfo",
-				InputFuncName:    "CreateDescribeSecurityGroupsInput",
 				DescribeFuncName: "DescribeSecurityGroupInfo",
 				PrintFuncName:    "PrintSecurityGroupInfo",
 			},
@@ -136,7 +126,6 @@ func main() {
 			filePath: "ec2_sg_perms.go",
 			data: templateData{
 				Name:             "doSecurityGroupPermissionsInfo",
-				InputFuncName:    "CreateDescribeSecurityGroupsInput",
 				DescribeFuncName: "DescribeSecurityGroupPermissionsInfo",
 				PrintFuncName:    "PrintSecurityGroupPermissionsInfo",
 			},
@@ -145,7 +134,6 @@ func main() {
 			filePath: "ec2_vpc_default.go",
 			data: templateData{
 				Name:             "doVpcInfo",
-				InputFuncName:    "CreateDescribeVpcsInput",
 				DescribeFuncName: "DescribeVpcInfo",
 				PrintFuncName:    "PrintVpcInfo",
 			},
@@ -154,7 +142,6 @@ func main() {
 			filePath: "ec2_vpc_attr.go",
 			data: templateData{
 				Name:             "doVpcAttributeInfo",
-				InputFuncName:    "CreateDescribeVpcsInput",
 				DescribeFuncName: "DescribeVpcAttributeInfo",
 				PrintFuncName:    "PrintVpcAttributeInfo",
 			},
@@ -163,7 +150,6 @@ func main() {
 			filePath: "ec2_vpc_cidr.go",
 			data: templateData{
 				Name:             "doVpcCidrInfo",
-				InputFuncName:    "CreateDescribeVpcsInput",
 				DescribeFuncName: "DescribeVpcCidrInfo",
 				PrintFuncName:    "PrintVpcCidrInfo",
 			},
@@ -172,7 +158,6 @@ func main() {
 			filePath: "ec2_subnet_default.go",
 			data: templateData{
 				Name:             "doSubnetInfo",
-				InputFuncName:    "CreateDescribeSubnetsInput",
 				DescribeFuncName: "DescribeSubnetInfo",
 				PrintFuncName:    "PrintSubnetInfo",
 			},
@@ -181,7 +166,6 @@ func main() {
 			filePath: "ec2_subnet_route.go",
 			data: templateData{
 				Name:             "doSubnetRouteInfo",
-				InputFuncName:    "CreateDescribeSubnetsInput",
 				DescribeFuncName: "DescribeSubnetRouteInfo",
 				PrintFuncName:    "PrintSubnetRouteInfo",
 			},
@@ -190,7 +174,6 @@ func main() {
 			filePath: "ec2_rtb_default.go",
 			data: templateData{
 				Name:             "doRouteTableInfo",
-				InputFuncName:    "CreateDescribeRouteTablesInput",
 				DescribeFuncName: "DescribeRouteTableInfo",
 				PrintFuncName:    "PrintRouteTableInfo",
 			},
@@ -199,7 +182,6 @@ func main() {
 			filePath: "ec2_rtb_assoc.go",
 			data: templateData{
 				Name:             "doRouteTableAssociationInfo",
-				InputFuncName:    "CreateDescribeRouteTablesInput",
 				DescribeFuncName: "DescribeRouteTableAssociationInfo",
 				PrintFuncName:    "PrintRouteTableAssociationInfo",
 			},
