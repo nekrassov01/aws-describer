@@ -9,8 +9,8 @@ builds:
     binary: aws-describer
     ldflags:
       - -s -w
-      - -X github.com/nekrassov01/describer/main.Version={{.Version}}
-      - -X github.com/nekrassov01/describer/main.Revision={{.ShortCommit}}
+      - -X github.com/nekrassov01/internal/app/describer/main.Version={{.Version}}
+      - -X github.com/nekrassov01/internal/app/describer/main.Revision={{.ShortCommit}}
     env:
       - CGO_ENABLED=0
     goos:
