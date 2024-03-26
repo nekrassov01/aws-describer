@@ -6,7 +6,7 @@ before:
     - go mod tidy
 builds:
   - main: ./
-    binary: aws-describer
+    binary: ./cmd/describer/main.go
     ldflags:
       - -s -w
       - -X github.com/nekrassov01/internal/app/describer/main.Version={{.Version}}
