@@ -1,0 +1,33 @@
+run:
+  timeout: 5m
+linters:
+  enable:
+    - dogsled
+    - errorlint
+    - gocritic
+    - gocyclo
+    - gofmt
+    - gofumpt
+    - gosec
+    - makezero
+    - misspell
+    - nakedret
+    - predeclared
+    - revive
+    - stylecheck
+    - tagliatelle
+    - thelper
+    - tparallel
+    - unconvert
+    - unparam
+    - unused
+    - wastedassign
+    - whitespace
+linters-settings:
+  revive:
+    rules:
+      - name: var-naming
+        disabled: true
+  stylecheck:
+    checks:
+      ["all", "-ST1000", "-ST1003", "-ST1016", "-ST1020", "-ST1021", "-ST1022"]
