@@ -1,8 +1,8 @@
 package tmpl
 
 import (
-	"html/template"
 	"os"
+	"text/template"
 )
 
 func RenderTemplate(name, tmpl, filePath string, data any) error {
